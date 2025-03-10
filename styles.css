@@ -81,8 +81,8 @@ nav {
     right: 0;
     width: 100%;
     height: 100vh; /* ارتفاع منو را به 100vh تنظیم کنید */
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; /* تغییر justify-content به flex-start */
@@ -155,7 +155,7 @@ nav {
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
-    top: 60px;
+    top: 35px;
     right: 0;
     width: 60%;
     height: calc(100vh - 60px);
@@ -350,13 +350,13 @@ nav {
   }
 
   .profile-frame {
-    width: 180px; /* افزایش عرض عکس */
-    height: 240px; /* افزایش ارتفاع عکس */
+    width: 190px; /* افزایش عرض عکس */
+    height: 500px; /* افزایش ارتفاع عکس */
   }
 
   .profile-image {
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 160%;
     border-radius: 15px;
     object-fit: cover; /* حفظ نسبت ابعاد عکس */
   }
