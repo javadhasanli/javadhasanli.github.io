@@ -1196,6 +1196,75 @@ body.dark-mode .skill-tag:hover {
     padding: 1rem;
     font-size: 0.9rem;
   }
+  /* استایل برای کتاب و عکس کتاب */
+.book-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* فاصله بین عکس و متن */
+}
+
+.book-image {
+  width: 100px; /* عرض عکس */
+  height: auto; /* ارتفاع خودکار برای حفظ نسبت ابعاد */
+  border-radius: 8px; /* گوشه‌های گرد */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* سایه ملایم */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* انیمیشن hover */
+}
+
+.book-image:hover {
+  transform: scale(1.05); /* بزرگ‌تر شدن عکس هنگام hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* سایه بیشتر هنگام hover */
+}
+
+.book-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* فاصله بین عکس و متن */
+}
+
+.book-link:hover {
+  color: var(--secondary-color);
+}
+/* رسپانسیو کردن عکس کتاب برای دستگاه‌های موبایل */
+@media (max-width: 768px) {
+  .book-container {
+    flex-direction: column; /* عکس و متن در موبایل به صورت عمودی نمایش داده شوند */
+    align-items: flex-start; /* متن و عکس از سمت چپ تراز شوند */
+    gap: 0.5rem; /* فاصله بین عکس و متن را کاهش دهید */
+  }
+
+  .book-image {
+    width: 80px; /* کاهش عرض عکس در موبایل */
+  }
+
+  .book-link {
+    flex-direction: column; /* عکس و متن در موبایل به صورت عمودی نمایش داده شوند */
+    align-items: flex-start; /* متن و عکس از سمت چپ تراز شوند */
+  }
+}
+/* تغییرات برای پایین‌تر بردن عکس و متن کتاب */
+.book-container {
+  margin-top: 30px; /* فاصله از بالا */
+}
+/* تغییرات برای حالت موبایل */
+@media (max-width: 768px) {
+  .book-container {
+    flex-direction: column; /* چیدمان عمودی */
+    align-items: center; /*居中 کردن محتوا */
+    text-align: center; /*居中 کردن متن */
+  }
+
+  .book-image {
+    margin-bottom: 10px; /* فاصله بین عکس و متن */
+  }
+
+  .book-link {
+    flex-direction: column; /* چیدمان عمودی برای لینک */
+    align-items: center; /*居中 کردن محتوا */
+  }
+}
 
   .contact-item i {
     font-size: 1.2rem;
