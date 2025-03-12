@@ -1196,7 +1196,54 @@ body.dark-mode .skill-tag:hover {
     padding: 1rem;
     font-size: 0.9rem;
   }
-  /* استایل برای کتاب و عکس کتاب */
+
+  .contact-item i {
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+.linkedin-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.linkedin-link:hover {
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+/* حالت شب */
+body.dark-mode .linkedin-link {
+  color: var(--white);
+}
+
+body.dark-mode .linkedin-link:hover {
+  color: var(--secondary-color);
+}
+.book-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.book-link:hover {
+  color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* حالت شب */
+body.dark-mode .book-link {
+  color: var(--white);
+}
+
+body.dark-mode .book-link:hover {
+  color: var(--secondary-color);
+}
+/* استایل برای کتاب و عکس کتاب */
 .book-container {
   display: flex;
   align-items: center;
@@ -1264,51 +1311,4 @@ body.dark-mode .skill-tag:hover {
     flex-direction: column; /* چیدمان عمودی برای لینک */
     align-items: center; /*居中 کردن محتوا */
   }
-}
-
-  .contact-item i {
-    font-size: 1.2rem;
-  }
-
-  footer p {
-    font-size: 0.8rem;
-  }
-}
-.linkedin-link {
-  text-decoration: none;
-  color: var(--primary-color);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.linkedin-link:hover {
-  color: var(--secondary-color);
-  transform: scale(1.1);
-}
-
-/* حالت شب */
-body.dark-mode .linkedin-link {
-  color: var(--white);
-}
-
-body.dark-mode .linkedin-link:hover {
-  color: var(--secondary-color);
-}
-.book-link {
-  text-decoration: none;
-  color: var(--primary-color);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.book-link:hover {
-  color: var(--secondary-color);
-  transform: scale(1.05);
-}
-
-/* حالت شب */
-body.dark-mode .book-link {
-  color: var(--white);
-}
-
-body.dark-mode .book-link:hover {
-  color: var(--secondary-color);
 }
