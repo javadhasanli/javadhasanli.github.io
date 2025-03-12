@@ -280,7 +280,6 @@ nav {
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  animation: fadeInUp 1s ease;
   font-weight: 800;
   color: var(--white);
 }
@@ -289,7 +288,6 @@ nav {
   font-size: 1.5rem;
   opacity: 0.9;
   margin-bottom: 2rem;
-  animation: fadeInUp 1s ease 0.2s;
   font-weight: 300;
   color: var(--white);
 }
