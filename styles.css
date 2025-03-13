@@ -1388,23 +1388,3 @@ body.dark-mode .publication-link:hover {
     align-items: center; /* مرکز‌چین کردن محتوا */
   }
 }
-/* استایل‌های پیش‌فرض برای لیست‌ها */
-.timeline-content ul {
-  list-style-position: inside; /* نشانگرهای لیست داخل متن قرار می‌گیرند */
-  margin-top: 1rem;
-}
-
-.timeline-content li {
-  margin-bottom: 0.5rem;
-}
-
-/* بهبود تراز و فاصله‌ها در حالت موبایل */
-@media (max-width: 768px) {
-  .timeline-content ul {
-    padding-left: 1rem; /* فاصله چپ برای لیست‌ها */
-  }
-
-  .timeline-content li {
-    padding-left: 0.5rem; /* فاصله چپ برای آیتم‌های لیست */
-  }
-}
