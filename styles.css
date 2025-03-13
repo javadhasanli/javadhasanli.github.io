@@ -1310,3 +1310,81 @@ body.dark-mode .book-link:hover {
     align-items: center; /*居中 کردن محتوا */
   }
 }
+/* استایل‌های پیش‌فرض برای لینک‌های انتشارات */
+.publication-link {
+  color: var(--primary-color); /* رنگ متن لینک */
+  text-decoration: none; /* حذف خط زیر متن */
+  transition: color 0.3s ease, transform 0.3s ease; /* انیمیشن تغییر رنگ و اندازه */
+  display: inline-block; /* برای اعمال transform بهتر */
+  margin: 5px 0; /* فاصله بین لینک‌ها */
+}
+
+/* استایل‌های hover برای لینک‌های انتشارات */
+.publication-link:hover {
+  color: var(--secondary-color); /* تغییر رنگ متن هنگام hover */
+  transform: scale(1.02); /* بزرگ‌تر شدن متن هنگام hover */
+}
+
+/* استایل‌های برای حالت شب */
+body.dark-mode .publication-link {
+  color: var(--white); /* رنگ متن لینک در حالت شب */
+}
+
+body.dark-mode .publication-link:hover {
+  color: var(--secondary-color); /* تغییر رنگ متن هنگام hover در حالت شب */
+}
+
+/* استایل‌های برای بخش کتاب */
+.book-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* فاصله بین عکس و متن */
+  margin-top: 1.5rem; /* فاصله از بالا */
+}
+
+.book-image {
+  width: 100px; /* عرض عکس */
+  height: auto; /* ارتفاع خودکار برای حفظ نسبت ابعاد */
+  border-radius: 8px; /* گوشه‌های گرد */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* سایه ملایم */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* انیمیشن hover */
+}
+
+.book-image:hover {
+  transform: scale(1.05); /* بزرگ‌تر شدن عکس هنگام hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* سایه بیشتر هنگام hover */
+}
+
+.book-link {
+  text-decoration: none;
+  color: var(--primary-color); /* رنگ متن لینک */
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* فاصله بین عکس و متن */
+  transition: color 0.3s ease, transform 0.3s ease; /* انیمیشن تغییر رنگ و اندازه */
+}
+
+.book-link:hover {
+  color: var(--secondary-color); /* تغییر رنگ متن هنگام hover */
+  transform: scale(1.02); /* بزرگ‌تر شدن متن هنگام hover */
+}
+
+/* رسپانسیو کردن عکس کتاب برای دستگاه‌های موبایل */
+@media (max-width: 768px) {
+  .book-container {
+    flex-direction: column; /* عکس و متن در موبایل به صورت عمودی نمایش داده شوند */
+    align-items: center; /* مرکز‌چین کردن عکس و متن */
+    text-align: center; /* متن در وسط قرار گیرد */
+    gap: 0.5rem; /* فاصله بین عکس و متن را کاهش دهید */
+  }
+
+  .book-image {
+    width: 80px; /* کاهش عرض عکس در موبایل */
+    margin-bottom: 10px; /* فاصله بین عکس و متن */
+  }
+
+  .book-link {
+    flex-direction: column; /* عکس و متن در موبایل به صورت عمودی نمایش داده شوند */
+    align-items: center; /* مرکز‌چین کردن محتوا */
+  }
+}
