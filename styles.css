@@ -1485,3 +1485,23 @@ body.dark-mode .publication-link:hover {
     border-bottom: none; /* حذف خط جداکننده برای آخرین مقاله */
   }
 }
+/* استایل‌های پیش‌فرض برای آیکون‌ها */
+.publication-icon {
+  width: 24px; /* اندازه پیش‌فرض آیکون‌ها */
+  height: 24px;
+  margin-left: 0.5rem; /* فاصله بین آیکون و متن */
+  vertical-align: middle; /* تراز عمودی آیکون با متن */
+}
+
+/* حالت شب برای آیکون‌ها */
+body.dark-mode .publication-icon {
+  filter: invert(1); /* تغییر رنگ آیکون‌ها به سفید در حالت شب */
+}
+
+/* رسپانسیو کردن آیکون‌ها در حالت موبایل */
+@media (max-width: 768px) {
+  .publication-icon {
+    width: 20px; /* کاهش اندازه آیکون‌ها در موبایل */
+    height: 20px;
+  }
+}
