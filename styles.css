@@ -1423,3 +1423,65 @@ body.dark-mode .publication-link:hover {
     color: var(--secondary-color); /* رنگ لینک‌ها هنگام hover در حالت شب */
   }
 }
+/* استایل‌های پیش‌فرض برای لیست‌ها */
+.timeline-content ul {
+  list-style-type: none; /* غیرفعال کردن bullet point */
+  padding-left: 0; /* حذف فاصله چپ */
+}
+
+.timeline-content li {
+  margin-bottom: 1rem; /* فاصله بین کارت‌ها */
+}
+
+/* استایل‌های کارت‌های مجزا فقط در حالت موبایل */
+@media (max-width: 768px) {
+  .timeline-content li {
+    background-color: var(--white); /* رنگ پس‌زمینه کارت در حالت روز */
+    padding: 1rem; /* فاصله داخلی کارت */
+    border-radius: 8px; /* گوشه‌های گرد */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* سایه ملایم */
+    border: 1px solid #e0e0e0; /* حاشیه کارت */
+  }
+
+  /* حالت شب در موبایل */
+  body.dark-mode .timeline-content li {
+    background-color: #2c3e50; /* رنگ پس‌زمینه کارت در حالت شب */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* حاشیه کارت در حالت شب */
+    color: var(--white); /* رنگ متن در حالت شب */
+  }
+
+  body.dark-mode .timeline-content li a {
+    color: var(--white); /* رنگ لینک‌ها در حالت شب */
+  }
+
+  body.dark-mode .timeline-content li a:hover {
+    color: var(--secondary-color); /* رنگ لینک‌ها هنگام hover در حالت شب */
+  }
+}
+/* استایل‌های پیش‌فرض برای لیست‌ها در حالت دسکتاپ */
+.timeline-content ul {
+  list-style-type: disc; /* نمایش bullet point */
+  list-style-position: inside; /* نشانگرهای لیست داخل متن قرار می‌گیرند */
+  padding-left: 1rem; /* فاصله چپ برای لیست‌ها */
+}
+
+.timeline-content li {
+  margin-bottom: 0.5rem; /* فاصله بین آیتم‌های لیست */
+}
+
+/* اضافه کردن خط جداکننده بین مقالات فقط در حالت موبایل */
+@media (max-width: 768px) {
+  .timeline-content ul {
+    padding-left: 1.5rem; /* افزایش فاصله چپ برای لیست‌ها در موبایل */
+  }
+
+  .timeline-content li {
+    padding-bottom: 1rem; /* فاصله پایین برای هر مقاله */
+    margin-bottom: 1rem; /* فاصله بین مقالات */
+    border-bottom: 1px solid #e0e0e0; /* خط جداکننده */
+  }
+
+  .timeline-content li:last-child {
+    border-bottom: none; /* حذف خط جداکننده برای آخرین مقاله */
+  }
+}
