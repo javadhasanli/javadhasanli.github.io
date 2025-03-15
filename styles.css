@@ -1505,3 +1505,29 @@ body.dark-mode .publication-icon {
     height: 20px;
   }
 }
+.phone-numbers {
+  display: flex;
+  flex-direction: column; /* نمایش عمودی */
+  gap: 0.5rem; /* فاصله بین دو شماره */
+}
+
+.phone-link {
+  text-decoration: none; /* حذف زیرخط لینک */
+  color: var(--primary-color); /* استفاده از رنگ اصلی */
+  transition: color 0.3s ease, transform 0.3s ease; /* انیمیشن تغییر رنگ و اندازه */
+  display: inline-block; /* برای اعمال transform بهتر */
+}
+
+.phone-link:hover {
+  color: var(--secondary-color); /* تغییر رنگ هنگام hover */
+  transform: scale(1.1); /* بزرگ‌تر شدن متن هنگام hover */
+}
+
+/* حالت شب */
+body.dark-mode .phone-link {
+  color: var(--white); /* رنگ متن در حالت شب */
+}
+
+body.dark-mode .phone-link:hover {
+  color: var(--secondary-color); /* تغییر رنگ هنگام hover در حالت شب */
+}
