@@ -1644,6 +1644,7 @@ body.dark-mode #executive .timeline-date {
     margin-right: 0; /* حذف margin برای آیتم‌های فرد */
   }
 }
+
 /* استایل‌های بخش سوابق اجرایی در حالت موبایل */
 @media (max-width: 768px) {
   #executive .timeline-item {
@@ -1677,7 +1678,29 @@ body.dark-mode #executive .timeline-date {
     color: var(--secondary-color); /* رنگ تاریخ */
     font-weight: 600; /* وزن فونت تاریخ */
   }
+/* استایل‌های پیش‌فرض برای بخش سوابق اجرایی */
+#executive .timeline-content h3 {
+  font-size: 1.1rem; /* اندازه فونت عنوان */
+  color: var(--primary-color); /* رنگ عنوان */
+  margin-bottom: 0.5rem; /* فاصله بین عنوان و تاریخ */
+}
 
+#executive .timeline-date {
+  font-size: 0.9rem; /* اندازه فونت تاریخ */
+  color: var(--secondary-color); /* رنگ تاریخ */
+  font-weight: 600; /* وزن فونت تاریخ */
+}
+
+/* استایل‌های بخش سوابق اجرایی در حالت موبایل */
+@media (max-width: 768px) {
+  #executive .timeline-content h3 {
+    font-size: 0.7rem; /* کاهش بیشتر سایز فونت عنوان در موبایل */
+  }
+
+  #executive .timeline-date {
+    font-size: 0.65rem; /* کاهش بیشتر سایز فونت تاریخ در موبایل */
+  }
+}
   /* رنگ‌های متفاوت برای هر آیتم */
   #executive .timeline-item:nth-child(1) .timeline-content {
     border-left-color: #3498db; /* آبی */
