@@ -1531,3 +1531,62 @@ body.dark-mode .phone-link {
 body.dark-mode .phone-link:hover {
   color: var(--secondary-color); /* تغییر رنگ هنگام hover در حالت شب */
 }
+/* استایل‌های بخش سوابق اجرایی */
+#executive .timeline {
+  margin: 2rem 0;
+  position: relative;
+}
+
+#executive .timeline::before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 2px;
+  height: 100%;
+  background-color: var(--secondary-color);
+}
+
+#executive .timeline-item {
+  margin-bottom: 2rem;
+  width: 50%;
+  padding: 0 2rem;
+  position: relative;
+}
+
+#executive .timeline-item:nth-child(odd) {
+  margin-right: auto;
+}
+
+#executive .timeline-content {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#executive .timeline-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#executive .timeline-date {
+  color: var(--secondary-color);
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+/* حالت شب برای بخش سوابق اجرایی */
+body.dark-mode #executive .timeline-content {
+  background-color: #1e2a3a;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode #executive .timeline-content h3 {
+  color: var(--white);
+}
+
+body.dark-mode #executive .timeline-date {
+  color: var(--secondary-color);
+}
