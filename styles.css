@@ -1644,6 +1644,61 @@ body.dark-mode #executive .timeline-date {
     margin-right: 0; /* حذف margin برای آیتم‌های فرد */
   }
 }
+/* استایل‌های بخش سوابق اجرایی در حالت موبایل */
+@media (max-width: 768px) {
+  #executive .timeline-item {
+    width: 100%; /* عرض کامل برای موبایل */
+    padding: 0 1rem; /* فاصله داخلی کمتر */
+    margin-bottom: 1.5rem; /* فاصله بین آیتم‌ها */
+  }
+
+  #executive .timeline-content {
+    padding: 1.5rem; /* فاصله داخلی بیشتر */
+    background-color: var(--white); /* رنگ پس‌زمینه */
+    border-radius: 12px; /* گوشه‌های گرد */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* سایه ملایم */
+    border-left: 4px solid var(--secondary-color); /* خط رنگی در سمت چپ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* انیمیشن hover */
+  }
+
+  #executive .timeline-content:hover {
+    transform: translateY(-5px); /* حرکت به بالا هنگام hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* سایه بیشتر هنگام hover */
+  }
+
+  #executive .timeline-content h3 {
+    font-size: 1.1rem; /* کاهش سایز فونت عنوان */
+    color: var(--primary-color); /* رنگ عنوان */
+    margin-bottom: 0.5rem; /* فاصله بین عنوان و تاریخ */
+  }
+
+  #executive .timeline-date {
+    font-size: 0.9rem; /* کاهش سایز فونت تاریخ */
+    color: var(--secondary-color); /* رنگ تاریخ */
+    font-weight: 600; /* وزن فونت تاریخ */
+  }
+
+  /* رنگ‌های متفاوت برای هر آیتم */
+  #executive .timeline-item:nth-child(1) .timeline-content {
+    border-left-color: #3498db; /* آبی */
+  }
+
+  #executive .timeline-item:nth-child(2) .timeline-content {
+    border-left-color: #e74c3c; /* قرمز */
+  }
+
+  #executive .timeline-item:nth-child(3) .timeline-content {
+    border-left-color: #2ecc71; /* سبز */
+  }
+
+  #executive .timeline-item:nth-child(4) .timeline-content {
+    border-left-color: #f1c40f; /* زرد */
+  }
+
+  #executive .timeline-item:nth-child(5) .timeline-content {
+    border-left-color: #9b59b6; /* بنفش */
+  }
+}
 /* استایل‌های skill-tag در حالت موبایل */
 @media (max-width: 768px) {
   .skill-tag {
