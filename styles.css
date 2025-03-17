@@ -519,7 +519,27 @@ nav {
 .publications-list {
   margin-top: 2rem;
 }
+/* استایل‌های بخش مقالات ژورنال و کنفرانسی در حالت موبایل */
+@media (max-width: 768px) {
+  .publications-list .timeline-content {
+    text-align: center; /* وسط‌چین کردن متن */
+  }
 
+  .publications-list .timeline-content ul {
+    padding-left: 0; /* حذف فاصله چپ لیست */
+    list-style-type: none; /* حذف bullet points */
+  }
+
+  .publications-list .timeline-content li {
+    text-align: center; /* وسط‌چین کردن آیتم‌های لیست */
+    margin-bottom: 1rem; /* فاصله بین آیتم‌ها */
+  }
+
+  .publications-list .timeline-content a {
+    display: block; /* لینک‌ها به صورت بلوکی نمایش داده شوند */
+    text-align: center; /* وسط‌چین کردن لینک‌ها */
+  }
+}
 /* Contact Section */
 .contact {
   padding: 100px 0;
