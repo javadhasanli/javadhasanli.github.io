@@ -402,6 +402,7 @@ nav {
   margin-top: 1rem;
 }
 
+/* استایل‌های پیش‌فرض برای skill-tag */
 .skill-tag {
   background-color: var(--secondary-color);
   color: var(--white);
@@ -409,6 +410,7 @@ nav {
   border-radius: 20px;
   font-size: 0.9rem;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  white-space: nowrap; /* جلوگیری از شکستن خط */
 }
 
 .skill-tag:hover {
@@ -1615,5 +1617,21 @@ body.dark-mode #executive .timeline-date {
 
   #executive .timeline-item:nth-child(odd) {
     margin-right: 0; /* حذف margin برای آیتم‌های فرد */
+  }
+}
+/* استایل‌های skill-tag در حالت موبایل */
+@media (max-width: 768px) {
+  .skill-tag {
+    font-size: 0.8rem; /* کاهش سایز فونت */
+    padding: 0.4rem 0.8rem; /* کاهش فاصله داخلی */
+    white-space: normal; /* اجازه شکستن خط */
+    word-break: break-word; /* شکستن کلمات طولانی */
+    text-align: center; /* متن در وسط قرار گیرد */
+    margin: 0.2rem; /* فاصله بین skill-tagها */
+  }
+
+  .skill-tags {
+    gap: 0.5rem; /* کاهش فاصله بین skill-tagها */
+    justify-content: center; /* وسط‌چین کردن skill-tagها */
   }
 }
