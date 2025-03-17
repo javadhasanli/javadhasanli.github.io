@@ -417,7 +417,24 @@ nav {
   transform: scale(1.05);
   background-color: var(--primary-color);
 }
+/* استایل‌های بخش "درباره من" در حالت موبایل */
+@media (max-width: 768px) {
+  .about h2 {
+    font-size: 1.5rem; /* کاهش سایز فونت عنوان */
+  }
 
+  .about p {
+    font-size: 0.9rem; /* کاهش سایز فونت متن */
+  }
+
+  .about .skills h3 {
+    font-size: 1.2rem; /* کاهش سایز فونت عنوان مهارت‌ها */
+  }
+
+  .about .skill-tag {
+    font-size: 0.8rem; /* کاهش سایز فونت skill-tagها */
+  }
+}
 /* Resume Section */
 .resume {
   padding: 100px 0;
@@ -488,7 +505,16 @@ nav {
   border-radius: 8px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
+/* استایل‌های بخش "زمینه‌های پژوهشی" در حالت موبایل */
+@media (max-width: 768px) {
+  .research-areas h2 {
+    font-size: 1.5rem; /* کاهش سایز فونت عنوان */
+  }
 
+  .research-areas ul li {
+    font-size: 0.9rem; /* کاهش سایز فونت آیتم‌های لیست */
+  }
+}
 /* Publications */
 .publications-list {
   margin-top: 2rem;
@@ -596,7 +622,6 @@ footer {
   }
 }
 
-/* دکمه حالت شب و روز */
 /* دکمه حالت شب و روز */
 .switch {
   position: fixed;
