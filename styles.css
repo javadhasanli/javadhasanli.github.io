@@ -1694,11 +1694,11 @@ body.dark-mode #executive .timeline-date {
 /* استایل‌های بخش سوابق اجرایی در حالت موبایل */
 @media (max-width: 768px) {
   #executive .timeline-content h3 {
-    font-size: 0.9rem; /* کاهش بیشتر سایز فونت عنوان در موبایل */
+    font-size: 1.1rem; /* کاهش بیشتر سایز فونت عنوان در موبایل */
   }
 
   #executive .timeline-date {
-    font-size: 0.75rem; /* کاهش بیشتر سایز فونت تاریخ در موبایل */
+    font-size: 0.85rem; /* کاهش بیشتر سایز فونت تاریخ در موبایل */
   }
 }
   /* رنگ‌های متفاوت برای هر آیتم */
