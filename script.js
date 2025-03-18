@@ -57,3 +57,10 @@ themeToggle.addEventListener("change", () => {
     localStorage.setItem("theme", "light");
   }
 });
+// مخفی کردن لودر پس از بارگذاری کامل صفحه
+window.addEventListener("load", function () {
+  const loader = document.querySelector(".loader");
+  if (loader) {
+    loader.style.display = "none";
+  }
+});
